@@ -11,11 +11,11 @@ class MyIterator:
     def __iter__(self):
         return self
     
-    def __init__(self, start, stop, step):
+    def __init__(self, start, stop, step = 1):
         self.start = start
         self.stop = stop
         self.step = step
-        step = 1
+  
     
     def __next__(self):
         current_num = self.start
